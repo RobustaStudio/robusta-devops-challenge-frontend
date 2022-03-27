@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <ul>
         {users.map((user) => (
-          <li>
+          <li key={user.id}>
             Name: {user.name} - Email: {user.email}
           </li>
         ))}
